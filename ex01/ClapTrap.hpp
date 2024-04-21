@@ -6,7 +6,7 @@
 /*   By: rrakman <rrakman@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 21:57:39 by rrakman           #+#    #+#             */
-/*   Updated: 2024/04/21 15:09:11 by rrakman          ###   ########.fr       */
+/*   Updated: 2024/04/21 20:52:32 by rrakman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,9 @@ class ClapTrap
 		void attack(const std::string& target);
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
+};
+
+class ScavTrap : public ClapTrap
+{
+	
 };
