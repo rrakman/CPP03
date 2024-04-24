@@ -6,7 +6,7 @@
 /*   By: rrakman <rrakman@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/04 21:57:44 by rrakman           #+#    #+#             */
-/*   Updated: 2024/04/24 02:55:31 by rrakman          ###   ########.fr       */
+/*   Updated: 2024/04/24 17:46:32 by rrakman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 int main()
 {
-	DiamondTrap a;
+	DiamondTrap a("test");
+	a.whoAmI();
 	return 0;
 }

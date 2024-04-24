@@ -6,7 +6,7 @@
 /*   By: rrakman <rrakman@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 23:55:18 by rrakman           #+#    #+#             */
-/*   Updated: 2024/04/24 02:48:55 by rrakman          ###   ########.fr       */
+/*   Updated: 2024/04/24 17:46:03 by rrakman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ DiamondTrap::DiamondTrap()
 
 DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name), FragTrap(name), ScavTrap(name)
 {
-    this->name = name;
     ClapTrap::name = name + "_clap_name";
+    this->name = name;
     hitPoint = 100;
     energyPoint = 50;
     attackDamage = 30;
@@ -53,4 +53,9 @@ DiamondTrap& DiamondTrap::operator=(const DiamondTrap &ref)
     }
 	std::cout<<"Copy assignment operator called"<<std::endl;
     return *this;
+}
+
+void DiamondTrap::whoAmI()
+{
+    std::cout<<"Im DiamondTrap My name is "<<this->name<<", my parent is : "<<ClapTrap::name<<std::endl;
 }
